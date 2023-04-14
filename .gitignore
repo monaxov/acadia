@@ -4,3 +4,4 @@ todo.txt
 *.wav
 ideas.ipynb
 tests.py
+pyproject.toml
