@@ -177,6 +177,10 @@ Its main features:
 - scalable structure
 
 It can be applied as a kind of assistive technology in education, for   teaching  topics regarding trigonometry, mathematical statistics, probability theory and so on to blind students,  within  the framework   of academic and applied studies   in  data science, data analysis, economics, sociology and  anywhere else   where it is necessary  to represent big amounts of numbers, as a substitute of conventional diagrams.
+The library  is available via pip install:
+```
+pip install acadia
+```
 
 The author sincerely hopes that the tool would  be helpful for blind and visually impaired people around the world and  the project  has a bright future.
 There are already some further steps in the pipeline (of course, the four-dimensional diagram is  the most intriguing)
