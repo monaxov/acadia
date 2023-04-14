@@ -1,6 +1,6 @@
 # acadia
 
-## An audio alternative of   conventional diagrms for blind and visually impaired people
+## An audio alternative of conventional diagrms for blind and visually impaired people
 
 Acadia  stands for accessible audio diagrams,  the  tool designed to assist blind and visually impaired people to get access to representation of numeric data.
 ### Introduction
@@ -13,16 +13,16 @@ Given that, there is the problem for those who happen to be blind or visually im
 Of course, with  assistive technologies like screenreading program or Braile display those users can get access to the data itself, but   in case of   hundreds and thousands of numbers they are of little help.
 A solution that would provide blind people with alternative of visual representation of numeric data is needed.
 
-Obviously, if it cannot be visual, it has to be either tactile or aural.
-An aural approach looks like more preferable, because it probably can be implemented without any additional hardware.
+Obviously, if it cannot be visual, it has to be either tactile or audial.
+An audial approach looks like more preferable, because it, probably, can be implemented without any additional hardware.
 
 ### Concept formulation
 
 Let us take a classic example  of two-dimensional linear diagram.
-All we need  is  to provide audio alternative for  its    contour defined  by vertical and  horizontal coordinates.
+All we need  is  to provide an audio alternative for  its    contour defined  by vertical and  horizontal coordinates.
 For that purpose we can try to use frequency of a signal  and its position within the stereo basis.
-But the nature of aural perception   is immanently temporal, whereas the nature of visual perception  is spacial.
-And the problem is that the third dimension, time itself, cannot be fully excluded like the third dimension in case of conventional charting.
+However, the nature of aural perception   is immanently temporal, whereas the nature of visual perception  is spacial.
+Thus the problem is that the third dimension, time itself, cannot be fully excluded like the third dimension in case of conventional charting.
 We have to try to reduce it as much as possible if our goal is to emulate graphic  representation, which perception is almost instantaneous.
 
 ***Note:**  We can theoretically have  even the fourth dimension,  expressed through sound pressure, so the audio representation of numeric data  can potentially give us  quite unusual  and promicing opportunities even beyond the context of accessibility.*
@@ -34,8 +34,8 @@ For the present our goal is to create   something like "audio snapshot", assumin
 There is a project called [the Accessible Graphs Project ](https://accessiblegraphs.org/english_guides/learnMore-en.html?lang=en),
 that exploits more or less the same idea. You can install a client with pip and then upload your data to a web application.
 Once it is done, a representation   opens in a default browser. 
-It is accessible  not only with audio interface, but also with screenreader and Braile display.
-Though the main concept  seems to be   realized, there are some features that in our humble opinion decrease its practical meaning:
+It is accessible  not only with audio interface, but also with a screenreader and a Braille display.
+Though the main concept  seems to be   realized, there are some features that, in our humble opinion, decrease its practical meaning:
 
 - the number of values that can be represented is limited to  29 items
 - presence of an Internet connection  is vital
@@ -43,7 +43,7 @@ Though the main concept  seems to be   realized, there are some features that in
 - inability to integrate into third-party applications
 - the only supported OS is Windows
 
-Also, however the "read entire graph" button is mentioned,   it is absent and you have a single option to move through the representation manually, entry by entry.
+Moreover, however the "read entire graph" button is mentioned,   it is absent and you have a single option to move through the representation manually, entry by entry.
 The latter could be a good extra feature, but only when combined with an ability  to provide an instant impression. 
 Once again, that ability is the very thing that makes visual plots so handy.
 Now we should take those drawbacks into  account and try to create a tool which 
@@ -57,7 +57,7 @@ And finally,   we  need to  make our  audio diagram as quick as a glance.
 
 ### Data processing
 
-Ok,  so far so good, to get a result we just need to realize a number of  steps. The pipeline could look like this:
+So far so good, to get a result we just need to realize a number of  steps. The pipeline could look like this:
 
 - get the values  for both dimensions, x and y
 - scale them to fit the range of audible frequencies and width of stereo basis (let us take the range between 220 and 7040 Hz and -45 and 45 degrees)
@@ -115,7 +115,7 @@ return np.vstack((left, right))
 
 ### Usage
 
-Ok, assume we already have values x and y for  plotting, the first thing that we do  is calling   Shape's constructor taking  x and y as arguments.
+Assume we already have values x and y for  plotting, the first thing that we do  is calling   Shape's constructor taking  x and y as arguments.
 Also it has  an optional parameter "mode", which determins the length of each segment of our plot and consequently it final "appearance". 
 There are two valid   options: 'fast' (10 milliseconds) and 'slow' (50 milliseconds). Default is 'fast'.
 Then we can add one or whatever number is needed sets of coordinates so we have several shapes through a single object.
@@ -165,7 +165,7 @@ histogram.to_device()
 ```
 
 ### Conclusion
-Finally, we have a     library that is designed  to provide  an audio representation of numeric data of various kinds without graphic component.
+Finally, we have a     python library that is designed  to provide  an audio representation of numeric data of various kinds without any graphic component.
 Its main features:
 - a simple intuitive interface
 - the Shape object generates values, that can be 
@@ -178,7 +178,7 @@ Its main features:
 
 It can be applied as a kind of assistive technology in education, for   teaching  topics regarding trigonometry, mathematical statistics, probability theory and so on to blind students,  within  the framework   of academic and applied studies   in  data science, data analysis, economics, sociology and  anywhere else   where it is necessary  to represent big amounts of numbers, as a substitute of conventional diagrams.
 
-We sincerely hope that the tool would  be helpful for blind and visually impaired people around the world and  the project  has a bright future.
-We are going to continue to do our best to make it better and there are already some further steps in the pipeline (of course, the four-dimensional diagram is  the most intriguing)
-We are always open to  any form of collaboration and kindly appreciate any suggestions of possible improvement, help  and feedback.
+The author sincerely hopes that the tool would  be helpful for blind and visually impaired people around the world and  the project  has a bright future.
+There are already some further steps in the pipeline (of course, the four-dimensional diagram is  the most intriguing)
+Any suggestions of possible improvement, any form of collaboration,   help  and feedback are kindly appreciated.
 
