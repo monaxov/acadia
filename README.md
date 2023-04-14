@@ -11,7 +11,7 @@ It is more than  convenient in most cases So an approach to data representation 
 Given that, there is the problem for those who happen to be blind or visually impaired.
 
 Of course, with  assistive technologies like screenreading program or Braile display those users can get access to the data itself, but   in case of   hundreds and thousands of numbers they are of little help.
-So we need a solution that would provide blind people with alternative of visual representation of numeric data.
+A solution that would provide blind people with alternative of visual representation of numeric data is needed.
 
 Obviously, if it cannot be visual, it has to be either tactile or aural.
 An aural approach looks like more preferable, because it probably can be implemented without any additional hardware.
@@ -21,7 +21,7 @@ An aural approach looks like more preferable, because it probably can be impleme
 Let us take a classic example  of two-dimensional linear diagram.
 All we need  is  to provide audio alternative for  its    contour defined  by vertical and  horizontal coordinates.
 For that purpose we can try to use frequency of a signal  and its position within the stereo basis.
-But the nature of aural perception   is immanently temporal, when  the nature of visual perception  is spacial.
+But the nature of aural perception   is immanently temporal, whereas the nature of visual perception  is spacial.
 And the problem is that the third dimension, time itself, cannot be fully excluded like the third dimension in case of conventional charting.
 We have to try to reduce it as much as possible if our goal is to emulate graphic  representation, which perception is almost instantaneous.
 
@@ -37,7 +37,7 @@ Once it is done, a representation   opens in a default browser.
 It is accessible  not only with audio interface, but also with screenreader and Braile display.
 Though the main concept  seems to be   realized, there are some features that in our humble opinion decrease its practical meaning:
 
-- a limit to the number of values represented is just 29
+- the number of values that can be represented is limited to  29 items
 - presence of an Internet connection  is vital
 - valid data types  are only list and dict
 - inability to integrate into third-party applications
@@ -84,7 +84,7 @@ The SAMPLERATE constant contains standard sampling rate value  44100 Hz.
 
 ### Shape logic
 Once we evoke Shape's constructor, it creates and configures an instance  ready to produce the values. The process itself starts only when the 'values' property is called.
-If there are embedded Shapes, the values are accessed recursively and there is no difference if they are  and what depth is.
+If there are embedded Shapes, the values are accessed recursively and there is no difference if they are  or not and what the depth is.
 
 Inside Tone class the values are also being manufactured only when they are needed and what we have is  a very   lightweighted object  which  contains only  its configuration.
 
@@ -166,7 +166,7 @@ histogram.to_device()
 
 ### Conclusion
 Finally, we have a     library that is designed  to provide  an audio representation of numeric data of various kinds without graphic component.
-Main features:
+Its main features:
 - a simple intuitive interface
 - the Shape object generates values, that can be 
     - played via sound device
