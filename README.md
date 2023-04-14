@@ -1,4 +1,4 @@
-# acadia_repo
+# acadia
 
 ## An audio alternative of   conventional diagrms for blind and visually impaired people
 

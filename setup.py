@@ -9,11 +9,12 @@ setup(
   author = 'Sergey Monakhov',                   # Type in your name
   author_email = 'monahovserg@gmail.com',      # Type in your E-Mail
   url = 'https://github.com/monaxov/acadia',   # Provide either the link to your github or to your website
-  download_url = 'https://github.com/monaxov/acadia/archive/v_011.tar.gz',    # I explain this later on
+  download_url = 'https://github.com/monaxov/acadia/archive/refs/tags/v0.1.1.tar.gz',    # I explain this later on
   keywords = ['ACCESSIBILITY', 'ACCESSIBLE', 'ASSISTIVE TECHNOLOGY', 'BLIND', 'VISUALLY IMPAIRED', 'CHARTING', 'PLOTTING', 'DIAGRAM', 'AUDIO'],   # Keywords that define your package best
   install_requires=[            # I get to this in a second
-          'validators',
-          'beautifulsoup4',
+          'numpy',
+          'sounddevice',
+          'soundfile',
       ],
   classifiers=[
     'Development Status :: 3 - Alpha',      # Chose either "3 - Alpha", "4 - Beta" or "5 - Production/Stable" as the current state of your package
@@ -25,3 +26,4 @@ setup(
     'Programming Language :: Python :: 3.9',
     'Programming Language :: Python :: 3.10',
   ],
+)
