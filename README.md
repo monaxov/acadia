@@ -21,7 +21,7 @@ An audial approach looks like more preferable, because it, probably, can be impl
 Let us take a classic example  of two-dimensional linear diagram.
 All we need  is  to provide an audio alternative for  its    contour defined  by vertical and  horizontal coordinates.
 For that purpose we can try to use frequency of a signal  and its position within the stereo basis.
-However, the nature of aural perception   is immanently temporal, whereas the nature of visual perception  is spacial.
+However, the nature of aural perception   is immanently temporal, whereas the nature of visual perception  is spatial.
 Thus the problem is that the third dimension, time itself, cannot be fully excluded like the third dimension in case of conventional charting.
 We have to try to reduce it as much as possible if our goal is to emulate graphic  representation, which perception is almost instantaneous.
 
